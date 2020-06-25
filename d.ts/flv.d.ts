@@ -379,7 +379,7 @@ declare namespace FlvJs {
     }
 }
 
-declare var FlvJs: {
+declare var flvjs: {
     createPlayer(mediaDataSource: FlvJs.MediaDataSource, config?: FlvJs.Config): FlvJs.Player;
     isSupported(): boolean;
     getFeatureList(): FlvJs.FeatureList;
@@ -415,4 +415,4 @@ declare var FlvJs: {
     readonly LoggingControl: FlvJs.LoggingControl;
 };
 
-export default FlvJs;
+export default flvjs;
