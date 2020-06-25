@@ -212,21 +212,21 @@ declare namespace FlvJs {
         to: number;
     }
 
-    interface LoaderStatus {
-        readonly kIdle: 0;
-        readonly kConnecting: 1;
-        readonly kBuffering: 2;
-        readonly kError: 3;
-        readonly kComplete: 4;
+    enum LoaderStatus {
+        kIdle = 0,
+        kConnecting = 1,
+        kBuffering = 2,
+        kError = 3,
+        kComplete = 4,
     }
 
-    interface LoaderErrors {
-        readonly OK: 'OK';
-        readonly EXCEPTION: 'Exception';
-        readonly HTTP_STATUS_CODE_INVALID: 'HttpStatusCodeInvalid';
-        readonly CONNECTING_TIMEOUT: 'ConnectingTimeout';
-        readonly EARLY_EOF: 'EarlyEof';
-        readonly UNRECOVERABLE_EARLY_EOF: 'UnrecoverableEarlyEof';
+    enum LoaderErrors {
+        OK = 'OK',
+        EXCEPTION = 'Exception',
+        HTTP_STATUS_CODE_INVALID = 'HttpStatusCodeInvalid',
+        CONNECTING_TIMEOUT = 'ConnectingTimeout',
+        EARLY_EOF = 'EarlyEof',
+        UNRECOVERABLE_EARLY_EOF = 'UnrecoverableEarlyEof',
     }
 
     interface LoaderErrorMessage {
