@@ -18,7 +18,7 @@
 
 // flv.js TypeScript definition file
 
-declare namespace FlvJs {
+export declare namespace FlvJs {
     interface MediaSegment {
         duration: number;
         filesize?: number;
